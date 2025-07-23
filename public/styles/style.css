@@ -1,0 +1,195 @@
+/* === Base Layout === */
+body {
+    background-color: #F9FAFB;
+    font-family: 'Georgia', serif;
+    color: #1F2937;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+.devblog-logo {
+  height: 32px;
+  width: auto;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.devblog-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  pointer-events: none; /* prevents hover/click effect */
+}
+
+.devblog-title:hover {
+  color: white; /* stay white even on hover */
+}
+
+
+
+/* === Container === */
+#create-edit {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* === Content Cards === */
+.content {
+    background-color: #FFFFFF;
+    color: #1F2937;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* .content:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+} */
+
+.blog-box {
+    background-color: #daf2fa;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 25px;
+}
+
+.blog-box:hover {
+    background-color: #eaf7fb;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* === Typography === */
+.pt-serif {
+    font-family: 'PT Serif', serif;
+}
+
+.blog-title a {
+    color: #2563EB;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.blog-title a:hover {
+    color: #12adfa;
+}
+
+.recent-link {
+    color: #1E40AF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.recent-link:hover {
+    color: #3B82F6;
+}
+
+.recent-heading {
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #374151;
+}
+
+/* === Buttons === */
+.button-rad {
+    border-radius: 25px;
+    background: linear-gradient(135deg, #7C3AED 0%, #A78BFA 100%); /* HD gradient */
+    color: #FFFFFF;
+    padding: 10px 22px;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(124, 58, 237, 0.5);
+}
+
+.button-rad:hover {
+    background: linear-gradient(135deg, #6D28D9 0%, #8B5CF6 100%); /* Brighter gradient for HD look */
+    box-shadow: 0 8px 22px rgba(124, 58, 237, 0.6);
+    color: #FFFFFF;
+}
+
+.custom-btn {
+    background: linear-gradient(135deg, #3A8DAD 0%, #7FD1E8 100%); /* Soft blue gradient */
+    color: #FFFFFF;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 16px rgba(58, 141, 173, 0.4); /* HD shadow */
+}
+
+.custom-btn:hover {
+    background: linear-gradient(135deg, #256D85 0%, #67B8D8 100%); /* Slightly darker HD blue */
+    box-shadow: 0 8px 22px rgba(37, 109, 133, 0.5); /* Deeper HD shadow */
+    color: #FFFFFF;
+}
+
+
+
+/* === Forms === */
+.dark-form {
+    background-color: #f0fbff; /* light, airy blue */
+    color: #2C2C2C !important;
+    border: 1px solid #b5e4f0; /* subtle blue border */
+    border-radius: 10px;
+    padding: 12px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-form::placeholder {
+    color: #94b0ba; /* soft steel blue for placeholder */
+}
+
+.dark-form:focus {
+    border-color: #5cc2dd; /* medium aqua blue */
+    box-shadow: 0 0 6px rgba(92, 194, 221, 0.4); /* glowy bluish highlight */
+    outline: none;
+}
+
+
+
+/* === Navbar === */
+nav.navbar {
+    background-color: #111827;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-link,
+nav .navbar-brand {
+    color: #E5E7EB !important;
+    font-weight: bold;
+}
+
+nav .nav-link:hover,
+nav .navbar-brand:hover {
+    color: #9cddf3 !important;
+}
+
+/* === Footer === */
+footer {
+    background-color: #0F172A;
+    color: #D1D5DB;
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #D1D5DB !important;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #9cddf3 !important;
+}
+
+.footer-custom {
+  margin-top: 0 !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
